@@ -9,6 +9,11 @@ docker compose up -d
 ```bash
 npm run dev
 ```
+
+## Link visita documentacion API
+
+http://localhost:8000/api-docs/
+
 # Pruebas de la API
 
 ## crear una URL corta:
