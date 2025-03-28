@@ -21,4 +21,17 @@ const getOriginalUrl = async (shortCode) => {
   return rows[0].original_url;
 };
 
-module.exports = { shortenUrl, getOriginalUrl };
+// Ejemplo de función para obtener todas las URLs (opcional)
+const getAllUrls = async () => {
+  const query = 'SELECT * FROM urls'; // Reemplaza con la query correcta
+   const [rows] = await pool.execute(query);
+   return rows;
+};
+
+//Ejemplo de función para eliminar una URL (opcional)
+ const deleteUrl = async (id) => {
+  const query = 'DELETE FROM urls WHERE id = ?'; // Reemplaza con la query correcta    
+  await pool.execute(query, [id]);
+ };
+
+module.exports = { shortenUrl, getOriginalUrl, getAllUrls, deleteUrl };

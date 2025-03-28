@@ -1,7 +1,7 @@
 ## Levantar MySQL con Docker:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Iniciar la aplicación:
@@ -31,5 +31,6 @@ POST  http://localhost:8000/api/urls/shorten
 
 ## Para redireccionar, abre en el navegador
 ```JSON
-http://localhost:3000/api/urls/<shortCode> (donde <shortCode> es el código generado).
+http://localhost:8000/api/urls/<shortCode> (donde <shortCode> es el código generado).
 ```
+
